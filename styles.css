@@ -1,0 +1,168 @@
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #282727; /* Un tono oscuro para mejorar la visibilidad */
+    background-color: white; /* Asegurar un fondo claro */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina cualquier padding que pueda causar espacios */
+    width: 100%;
+}
+
+/* === NAVBAR PRINCIPAL === */
+
+.navegacion-principal {
+    position: fixed; /* Fijar el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1.5rem 0; /* Ajusta el padding superior e inferior */
+    z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+/* Contenedor del menú */
+.navegacion-principal ul   {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Alinea todo en la misma línea */
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0; 
+}
+
+.navegacion-principal ul li a {
+    font-size: 1.2rem;
+   
+}
+
+/* Todos los enlaces MENOS el de Contacto */
+.navegacion-principal ul li:not(.contacto) a {
+    color: rgb(40, 39, 39);
+    padding: 0.625rem 2rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Estado activo: TODOS LOS ENLACES MENOS "CONTACTO" */
+.navegacion-principal ul li:not(.contacto) a:active {
+    border: 2px solid #3cd89a;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px rgba(60, 216, 154, 0.6);
+    
+}
+
+/* Hover en enlaces normales */
+.navegacion-principal ul li:not(.contacto) a:hover {
+    color: #3cd89a;
+}
+
+/* === Botón Contacto === */
+
+/* Estilo para el botón de "Contacto" */
+.navegacion-principal ul li.contacto a {
+    color: white; /* Texto blanco siempre */
+    background-color: #3cd89a; /* Fondo verde SIEMPRE visible */
+    border-radius: 30px;
+    padding: 0.625rem 2rem;
+    margin: 0;
+    align-items: center; /* Asegura que el texto esté alineado */
+    display: flex;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    
+}
+
+/* Hover del botón Contacto */
+.navegacion-principal ul li.contacto a:hover {
+    background-color: #47be8e;
+    transform: scale(1.05);
+}
+
+/* Estado activo del botón Contacto */
+.navegacion-principal ul li.contacto a:active {
+    box-shadow: 0px 0px 12px rgba(60, 216, 154, 0.8);
+}
+
+
+
+/*===Footer===*/
+
+footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #3cd89a;
+color: white;
+text-align: center;
+justify-content: center;
+padding: 2rem 0;
+gap: 2rem;
+width: 100%;
+box-sizing: border-box;
+margin: 0;
+
+}
+
+footer p {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.navegacion-secundaria {
+    margin-top: 2rem; /* Espacio entre el texto y la nav */
+}
+
+.navegacion-secundaria ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.navegacion-secundaria a  {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Efecto hover para los enlaces del footer */
+
+.navegacion-secundaria a:hover {
+    color: rgb(40, 39, 39);
+}
+
+/* Efecto active para los enlaces del footer */
+.navegacion-secundaria a:active {
+    position: relative; /* Necesario para mover el texto */
+    top: 2px; /* Desplaza el texto ligeramente hacia abajo */
+    transition: top 0.2s ease; /* Efecto suave al desplazarse */
+}
+
+/* Pantallas pequeñas (por ejemplo, teléfonos) */
+@media (max-width: 480px) {
+    .navegacion-principal ul li {
+        display: block; /* Muestra los enlaces en bloque en pantallas muy pequeñas */
+        margin-right: 0; /* Elimina el margen entre los enlaces */
+        margin-bottom: 1rem; /* Espaciado entre los enlaces */
+    }
+
+    footer nav.navegacion-secundaria ul {
+        flex-direction: column; /* Los enlaces en el footer se apilan verticalmente */
+    }
+
+    footer nav.navegacion-secundaria ul li {
+        margin-bottom: 1rem; /* Espaciado entre los enlaces */
+    }
+}
