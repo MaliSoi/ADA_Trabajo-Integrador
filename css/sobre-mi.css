@@ -2,16 +2,17 @@
     width: 90%; /* Establecer el ancho como un porcentaje del contenedor */
     max-width: 1200px; /* Para evitar que se haga demasiado grande */
     margin: 10rem auto; /* Centra la sección */
-    padding: 2rem 5%; /* Espacio a los lados */
+    padding: 4% 5%; /* Espacio a los lados */
     display: flex; /* Usamos flexbox */
     flex-direction: column; /* Alineamos los elementos verticalmente */
-    justify-content: flex-start; /* Alinea los elementos al principio sin distribuir espacio */
+    justify-content: center; /* Alinea los elementos al principio sin distribuir espacio */
     gap: 1rem; /* Ajusta el espacio entre los elementos */    
     align-items: left;
+    box-sizing: border-box;
 }
 
 section {
-    scroll-margin-top:  10rem; /* Ajusta según la altura de tu menú */
+    scroll-margin-top:  14rem; /* Ajusta según la altura de tu menú */
 }
 
 
@@ -42,10 +43,12 @@ p {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     width: auto;
     max-width: 14rem;
+    text-decoration: none; /* Quita el subrayado */
     transition: background-color 0.3s ease; /* Transición suave para el hover */
     
    
 }
+
 
 /* Efecto hover para el botón */
 .btn-lo-que-hago:hover {
@@ -58,5 +61,26 @@ p {
     box-shadow: 0px 0px 12px rgba(60, 216, 154, 0.8);
 }
 
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
+
+.texto {
+    width: 50%; /* Para que ocupe la mitad del espacio */
+}
+
+.imagen-sobre-mi {
+    width: 40%;
+    text-align: right; /* Asegura que la imagen se alinee a la derecha */
+}
+
+.imagen-sobre-mi img {
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño máximo */
+    border-radius: 10px;
+}
 

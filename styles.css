@@ -3,13 +3,15 @@
 body{
     font-family: "Poppins", sans-serif;
     color: #282727; /* Un tono oscuro para mejorar la visibilidad */
-    background-color: white; /* Asegurar un fondo claro */
+    background-color: rgb(253, 252, 246); 
     margin: 0; /* Elimina el margen predeterminado del navegador */
     padding: 0; /* Elimina cualquier padding que pueda causar espacios */
     width: 100%;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* === NAVBAR PRINCIPAL === */
@@ -19,7 +21,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color:rgb(253, 252, 246);
     padding: 1rem 0; /* Ajusta el padding superior e inferior */
     z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
     display: flex;
@@ -69,7 +71,7 @@ body{
 
 /* Estilo para el botón de "Contacto" */
 .navegacion-principal ul li.contacto-menu a {
-    color: white; /* Texto blanco siempre */
+    color: rgb(253, 252, 246);
     background-color: #3cd89a; /* Fondo verde SIEMPRE visible */
     border-radius: 30px;
     padding: 0.625rem 2rem;
@@ -101,7 +103,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: #3cd89a;
-color: white;
+color: rgb(253, 252, 246);
 text-align: center;
 justify-content: center;
 padding: 2rem 0;
@@ -136,7 +138,7 @@ footer p {
 }
 
 .navegacion-secundaria a  {
-    color: white;
+    color:rgb(253, 252, 246);
     text-decoration: none;
     font-size: 1rem;
 }
