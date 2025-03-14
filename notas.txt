@@ -12,92 +12,28 @@ font-family: "Poppins", sans-serif;
 
 
 frontend-proyecto-portfolio.adaitw.org
-head
 
-<!DOCTYPE html>
-<html lang="es">
+Agrega los cambios al staging area:
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malala Soifer - Portfolio</title>
+Después de hacer tus modificaciones, agrega el archivo modificado al área de preparación (staging) con:
 
-    <!-- Fuentes y Estilos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+bash
+Copiar
+Editar
+git add sobre-mi.css
+Haz un commit de los cambios:
 
-    <!-- Estilos generales -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Estilos específicos de cada sección -->
-    <link rel="stylesheet" href="css/sobre-mi.css">
-    <link rel="stylesheet" href="css/conocimientos.css">
-    <link rel="stylesheet" href="css/proyectos.css">
-    <link rel="stylesheet" href="css/contacto.css">
+Luego, guarda los cambios con un mensaje que describa lo que hiciste:
 
-</head>
+bash
+Copiar
+Editar
+git commit -m "Añadir estilos CSS para la sección 'Sobre mí'"
+Sube tus cambios a GitHub:
 
-<body>
+Finalmente, sube la rama sobre-mi a GitHub para guardar los cambios:
 
-    <!-- Header con navegación principal -->
-    <header>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Sección Sobre Mí -->
-        <section id="sobre-mi">
-            <h1>Sobre Mí</h1>
-            <p>Hola, soy Malala Soifer, diseñadora especializada en UX/UI y diseño textil...</p>
-        </section>
-
-        <!-- Sección Conocimientos -->
-        <section id="conocimientos">
-            <h2>Conocimientos</h2>
-            <p>Aquí incluirás tus habilidades técnicas y herramientas que dominas.</p>
-        </section>
-
-        <!-- Sección Cita o Inspiración -->
-        <section id="cita">
-            <blockquote>
-                "El diseño no es solo lo que se ve y se siente. El diseño es cómo funciona." - Steve Jobs
-            </blockquote>
-        </section>
-
-        <!-- Sección Proyectos -->
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Aquí puedes mostrar tus trabajos con imágenes y descripciones.</p>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mis redes sociales o correo electrónico.</p>
-        </section>
-    </main>
-
-    <!-- Footer con navegación secundaria -->
-    <footer>
-        <nav aria-label="Navegación secundaria">
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 Malala Soifer - Todos los derechos reservados.</p>
-    </footer>
-
-</body>
-
-</html>
+bash
+Copiar
+Editar
+git push origin sobre-mi
