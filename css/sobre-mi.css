@@ -35,7 +35,7 @@ p {
     margin-top: 1rem;
     display: inline-block;
     background-color: #3cd89a; /* Color de fondo */
-    color: white; /* Color del texto */
+    color: rgb(246, 245, 247); /* Color del texto */
     padding: 0.8rem 2rem;
     border: none; /* Sin borde */
     border-radius: 30px; /* Bordes redondeados */

@@ -3,7 +3,7 @@
 body{
     font-family: "Poppins", sans-serif;
     color: #282727; /* Un tono oscuro para mejorar la visibilidad */
-    background-color: rgb(253, 252, 246); 
+    background-color:  rgb(246, 245, 247); 
     margin: 0; /* Elimina el margen predeterminado del navegador */
     padding: 0; /* Elimina cualquier padding que pueda causar espacios */
     width: 100%;
@@ -21,7 +21,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:rgb(253, 252, 246);
+    background-color: rgb(246, 245, 247);
     padding: 1rem 0; /* Ajusta el padding superior e inferior */
     z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
     display: flex;
@@ -71,7 +71,7 @@ html {
 
 /* Estilo para el botón de "Contacto" */
 .navegacion-principal ul li.contacto-menu a {
-    color: rgb(253, 252, 246);
+    color: rgb(246, 245, 247);
     background-color: #3cd89a; /* Fondo verde SIEMPRE visible */
     border-radius: 30px;
     padding: 0.625rem 2rem;
@@ -103,7 +103,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: #3cd89a;
-color: rgb(253, 252, 246);
+color:  rgb(246, 245, 247);
 text-align: center;
 justify-content: center;
 padding: 2rem 0;
@@ -138,7 +138,7 @@ footer p {
 }
 
 .navegacion-secundaria a  {
-    color:rgb(253, 252, 246);
+    color: rgb(246, 245, 247);
     text-decoration: none;
     font-size: 1rem;
 }
