@@ -1,0 +1,86 @@
+/* Estilos generales de la sección de proyectos */
+#proyectos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto; /* Ajusta el margen para separar de otras secciones */
+    padding: 4% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilos de la grilla de proyectos */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 3rem; /* Espacio entre las tarjetas */
+    margin-top: 2rem;
+    justify-items: center;
+    padding: 2rem 0;
+    width: auto;
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.card-proyecto {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 1rem;
+    overflow: hidden; /* Asegura que todo se recorte si es necesario */
+}
+
+.card-proyecto:hover {
+    transform: translateY(-10px); /* Efecto al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icono de cada proyecto */
+.card-proyecto i {
+    font-size: 4rem; /* Tamaño grande del ícono */
+    color: #282727; /* Color del ícono */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Título de cada proyecto */
+.card-proyecto h3 {
+    font-size: 1.2rem;
+    color: #282727;
+    margin: 1rem 0;
+}
+
+/* Estilo del enlace para que no se vea subrayado */
+.proyecto-link {
+    text-decoration: none;
+    display: block;
+}
+
+/* Imagen de la car de portfolio */
+.images {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+}
+
+/* Efecto de cambio de color en el ícono al hacer hover */
+.card-proyecto:hover i {
+    color: #36e7f4; /* Cambio de color del ícono */
+    transform: scale(1.1); /* Efecto de aumento al hacer hover */
+}

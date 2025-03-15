@@ -12,10 +12,8 @@
 }
 
 section {
-    scroll-margin-top:  14rem; /* Ajusta según la altura de tu menú */
+    scroll-margin-top:  20rem; /* Ajusta según la altura de tu menú */
 }
-
-
 
 h1 {
     color: #3cd89a; 
@@ -28,6 +26,7 @@ p {
 
 #sobre-mi h2, #sobre-mi h1, #sobre-mi p {
     margin: 0; /* Elimina márgenes por defecto */
+    text-align: left;
 }
 
 /* Estilo del botón */
