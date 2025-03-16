@@ -2,8 +2,8 @@
 #proyectos {
     width: 90%;
     max-width: 1200px;
-    margin: 4rem auto; /* Ajusta el margen para separar de otras secciones */
-    padding: 4% 5%;
+    margin: 6rem auto; /* Ajusta el margen para separar de otras secciones */
+    padding: 2% 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
