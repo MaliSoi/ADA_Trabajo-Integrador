@@ -140,12 +140,12 @@ input:hover, textarea:hover {
     width: 20%;
     cursor: pointer;
     border: none;
-    transition: background 0.3s ease; transform 0.3s ease;  box-shadow 0.3s ease;
+    transition: background-color 0.3s ease; transform: 0.3s;
 }
 
 
 .btn-enviar:hover {
-    background: #47be8e;
+    background-color: #47be8e;
     transform: scale(1.05); /* Mismo efecto de escala */
 }
 
