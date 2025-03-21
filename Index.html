@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malala Soifer - Portfolio</title>
+    
 
     <!-- Fuentes y Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,7 @@
      <link rel="stylesheet" href="css/conocimientos.css">
      <link rel="stylesheet" href="css/proyectos.css">
      <link rel="stylesheet" href="css/contacto.css">
+     <link rel="stylesheet" href="responsive.css"> <!-- Archivo responsive -->
 
 
 </head>
@@ -27,15 +29,16 @@
     <!--Header con navegación principal-->
     <header>
         <nav class="navegacion-principal">
-            <div class="contenedor">
-          <ul>
+            <ul>
             <li><a href="#sobre-mi">Sobre Mi</a></li>
             <li><a href="#conocimientos">Conocimientos</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li class="contacto-menu"><a href="#contacto">Contacto</a></li> <!-- Botón Contacto -->
           </ul>
-            </div>
-          </nav>
+          <div class="hamburguesa" id="hamburguesa">
+            <i class="fas fa-bars"></i>
+        </div>
+            </nav>
     </header>
 
     <main>
@@ -221,5 +224,10 @@
     </footer>
     <!--Final seccion Footer-->
     
+    
+    
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>
