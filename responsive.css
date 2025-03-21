@@ -1,0 +1,93 @@
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* ----- Navegación Principal ----- */
+    .navegacion-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion-principal ul {
+        flex-direction: column;
+        width: 15rem;
+        text-align: left;
+        position: absolute;
+        top: 4rem;
+        right: 6%;
+        background-color: rgb(246, 245, 247);
+        display: none;
+        overflow: visible;
+        box-shadow: -0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        transform: translateY(-20px);
+    }
+
+    .navegacion-principal ul.activo {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .navegacion-principal ul li {
+        margin: 0;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* ----- Menú Hamburguesa ----- */
+    .hamburguesa {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        margin-left: 80%;
+    }
+
+    .hamburguesa i {
+        font-size: 2rem;
+        color: #333;
+        text-align: center;
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .hamburguesa.activo i {
+        transform: rotate(90deg);
+    }
+
+    /* ----- Botón Contacto como Enlace ----- */
+    .contacto-menu a {
+        background: none !important; /* Elimina el fondo en responsive */
+        border: none;
+        padding: 0;
+        color: #3cd89a; /* Color del texto */
+        font-weight: bold;
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover del botón Contacto */
+    .contacto-menu a:hover {
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
+
+    /* Estado activo del botón Contacto */
+    .contacto-menu a:active {
+        box-shadow: 0px 0px 12px rgba(60, 216, 154, 0.8);
+    }
+
+    /* ----- Estilos específicos para Contacto dentro del menú ----- */
+    .navegacion-principal ul li.contacto-menu a {
+        color: #3cd89a;
+        padding: 0.625rem 2rem;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+    .navegacion-principal ul li.contacto-menu a:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+}
+
+
+
+
