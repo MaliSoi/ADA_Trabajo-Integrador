@@ -2,7 +2,7 @@
 # Portafolio Malala Soifer
 
 
-
+![Captura de pantalla de mi portafolio](./images/portfolio-image.png)
  
 
 
