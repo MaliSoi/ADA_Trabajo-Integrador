@@ -1,6 +1,7 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const hamburguesa = document.getElementById('hamburguesa');
+const menu = document.querySelector('.navegacion-principal ul');
 
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('open');
+hamburguesa.addEventListener('click', () => {
+    menu.classList.toggle('activo');
+    hamburguesa.classList.toggle('activo'); // Agrega o quita la clase 'activo' al menú hamburguesa
 });
