@@ -1,6 +1,78 @@
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
 
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        idth: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden; /* Evita el scroll horizontal */
+    }
+
+    header, main, footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .contenido, .grid-contenido, .grid-proyectos, .contacto-contenedor, .grid-conocimientos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-conocimientos {
+        width: 24rem;
+    }
+
+    .grid-conocimientos .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid-conocimientos .card i {
+        font-size: 70px;
+    margin-bottom: 0.5rem;
+    margin-top: -1rem; /* Agregamos margen superior */
+    }
+
+    .grid-conocimientos .card h3 {
+        font-size: 1rem; /* Reducimos el tamaño del texto */
+        margin-top: 0;
+    }
+
+    
+    .grid-proyectos {
+        width: auto;
+    }
+
+    .contacto-info, .contacto-formulario {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p, li, a, h1, h2, h3 {
+        word-wrap: break-word;
+    }
+
+
+
     /* ----- Navegación Principal ----- */
     .navegacion-principal {
         display: flex;
@@ -10,13 +82,15 @@
 
     .navegacion-principal ul {
         flex-direction: column;
-        width: 15rem;
+        width: 100vw; /* Ocupa todo el ancho de la pantalla */
         text-align: left;
         position: absolute;
-        top: 4rem;
-        right: 6%;
+        right: 0; /* Alinea a la derecha */;
         background-color: rgb(246, 245, 247);
         display: none;
+        top: 4rem;
+        width: 50vw; /* El menú ocupa el 90% del ancho de la pantalla */
+        max-width: 100vw;
         overflow: visible;
         box-shadow: -0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
         transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -32,6 +106,7 @@
         margin: 0;
         padding: 1rem;
         border-bottom: 1px solid #eee;
+        box-sizing: border-box;
     }
 
     /* ----- Menú Hamburguesa ----- */
@@ -39,7 +114,9 @@
         display: flex;
         justify-content: flex-end;
         width: auto;
-        margin-left: 80%;
+        margin-left: auto; /* Empuja el icono hacia la derecha */
+        padding-right: 1rem; /* Agrega padding a la derecha */
+        
     }
 
     .hamburguesa i {
@@ -86,6 +163,54 @@
         text-decoration: none;
         transform: scale(1.05);
     }
+
+    /*Seccion sobre mi*/
+
+    #sobre-mi .contenido {
+        display: flex;
+        flex-direction: column; /* Apila el texto y la imagen en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centramos el texto dentro de los elementos */
+        justify-content: space-between;
+        padding: 2rem;
+
+    }
+
+    #sobre-mi .texto {
+        position: relative;
+        width: 100%; /* El texto ocupa todo el ancho disponible */
+        margin-bottom: 2rem; /* Agrega espacio entre el texto y la imagen */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centramos el texto dentro de los elementos */
+        
+    }
+
+    #sobre-mi .imagen-sobre-mi {
+        width: 90%; /* La imagen ocupa el 80% del ancho disponible */
+        max-width: 100vw; /* Limitamos el ancho máximo de la imagen */
+        margin-top: 2rem; /* Agregamos espacio entre el texto y la imagen */
+    }
+
+    #sobre-mi .imagen-sobre-mi img {
+        width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+        height: auto; /* La altura se ajusta automáticamente */
+    }
+
+    #sobre-mi .texto h2 {
+        margin-bottom: 2rem; /* Aumentamos el margen inferior del h2 */
+    }
+    
+    #sobre-mi .texto h1 {
+        margin-bottom: 2rem; /* Aumentamos el margen inferior del h1 */
+    }
+    
+    #sobre-mi .texto p {
+        margin-bottom: 2rem; /* Aumentamos el margen inferior del párrafo */
+    }
+ 
+    /*Fin seccion sobre mi*/
+
+    
 }
 
 

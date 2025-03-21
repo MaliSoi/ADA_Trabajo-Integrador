@@ -155,15 +155,3 @@ input:hover, textarea:hover {
 
 
 
-/* Ajustes responsive */
-@media (max-width: 768px) {
-    .contacto-contenedor {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contacto-info, .contacto-formulario {
-        width: 100%;
-    }
-}

@@ -17,6 +17,17 @@ section {
     align-items: center;
 }
 
+.grid-conocimientos {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna en pantallas pequeñas */
+    gap: 2rem; /* Reduce el espacio entre las cards */
+}
+
+.card {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: none; /* Elimina el ancho máximo */
+    height: auto; /* Ajuste automático de altura */
+}
+
 h2 {
     font-size: 1.5rem;
 }
@@ -74,12 +85,12 @@ p{
 
 /* Imagen que reemplaza a <i> */
 .figma-hover {
-    width: 100px;
-    height: 100px;
-    position: absolute; /* Se coloca sobre el ícono */
-    top: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%; /* Ajustamos la posición vertical */
     left: 50%;
-    transform: translate(-50%, -50%); /* Se mantiene en la misma posición */
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;   
 }

@@ -103,7 +103,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.car .card-figma:hover .figma-hover {
+.card .card-figma:hover .figma-hover {
     display: block; /* Mostrar la imagen al hacer hover */
     
 }
