@@ -85,10 +85,10 @@ p{
 
 /* Imagen que reemplaza a <i> */
 .figma-hover {
-    width: 80px;
-    height: 80px;
+    width: 7rem;
+    height: 7rem;
     position: absolute;
-    top: 40%; /* Ajustamos la posición vertical */
+    top: 50%; /* Ajustamos la posición vertical */
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
