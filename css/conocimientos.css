@@ -85,8 +85,8 @@ p{
 
 /* Imagen que reemplaza a <i> */
 .figma-hover {
-    width: 7rem;
-    height: 7rem;
+    max-width: 7rem; /* Ajustamos el ancho máximo */
+    max-height: 7rem; /* Ajustamos la altura máxima */
     position: absolute;
     top: 50%; /* Ajustamos la posición vertical */
     left: 50%;
