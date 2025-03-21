@@ -67,6 +67,45 @@ html {
     color: #3cd89a;
 }
 
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguesa div {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.hamburguesa {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburguesa div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+}
+
+
+
 /* === Botón Contacto === */
 
 /* Estilo para el botón de "Contacto" */
