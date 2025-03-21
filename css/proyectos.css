@@ -79,44 +79,7 @@ h2 {
     display: block; /* Elimina cualquier espacio extra debajo de la imagen */
 }
 
-/* Efecto de cambio de color en el ícono al hacer hover */
-.card-proyecto:hover i {
-    color: #36e7f4; /* Cambio de color del ícono */
-    transform: scale(1.1); /* Efecto de aumento al hacer hover */
-}
 
-/* Card Figma */
-.card .card-figma {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
 
-.card .card-figma i {
-    font-size: 4rem; /* Ícono grande */
-    color:  #282727;
-    margin-bottom: 1rem;
-}
 
-.card .card-figma:hover .figma-hover {
-    display: block; /* Mostrar la imagen al hacer hover */
-    
-}
 
-.card .card-figma:hover i {
-    display: none; /* Ocultar ícono al hacer hover */
-    
-    
-}
-
-.card .card-figma h3 {
-    font-size: 1.2rem;
-    color: #282727;
-    margin: 1rem 0;
-
-}
